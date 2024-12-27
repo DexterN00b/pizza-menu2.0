@@ -1,0 +1,22 @@
+=> A component is made up of three things : 1. data (1. props 2. state)  2. logic  3. Appearance 
+
+PROPS 
+=> props is the data coming from the outside, and can only be updated by the parent component
+=> Props are immutable, that they are READ-ONLY
+why immutable ?
+=> mutating props objects would affect the parent component creating side effects (not pure) , when u copy an object and mutate the copy the original object will also be mutated
+=> if you change an object that is located outside the component function, that function has then created a so called side effect.
+=> Side effect happens whenever you change some data thats located outside of the current function.
+=> react is all about pure function (no side effects)
+
+
+=> to define props, we do it in two steps 
+1. we pass the props into the component
+2. we receive the props in the component we want to pass them into
+
+STATE
+=> internal data that can be updated by the component logic.
+
+DATA FLOW: => one way => from parent to child
+
+RENDERING LISTS: when we have an array and we want to create one component for each element of the array 
